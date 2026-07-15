@@ -1,0 +1,17 @@
+{"id":1,"makeModel":"Tesla Model X","year":2024,"retailPrice":43000.0}
+{"id":2,"makeModel":"BWM 3 series","year":2016,"retailPrice":40000.0}
+{"id":3,"makeModel":"Honda Accord","year":2004,"retailPrice":20000.0}
+{"id":4,"makeModel":"Mercury Grand Marquis","year":1999,"retailPrice":2000.0}
+{"id":7,"makeModel":"Porsche 911","year":1999,"retailPrice":90000.0}
+{"id":8,"makeModel":"Chevrolet Camaro","year":2022,"retailPrice":25000.0}
+{"id":9,"makeModel":"Ford Mustang","year":2021,"retailPrice":30000.0}
+{"id":10,"makeModel":"Audi A4","year":2018,"retailPrice":35000.0}
+{"id":11,"makeModel":"Toyota Camry","year":2019,"retailPrice":24000.0}
+{"id":12,"makeModel":"Nissan Altima","year":2020,"retailPrice":22000.0}
+{"id":13,"makeModel":"Hyundai Sonata","year":2021,"retailPrice":21000.0}
+{"id":14,"makeModel":"Kia Optima","year":2017,"retailPrice":18000.0}
+{"id":15,"makeModel":"Subaru Outback","year":2019,"retailPrice":27000.0}
+{"id":1,"makeModel":"DmqbDfWTfc","year":2002,"retailPrice":15729.0}
+{"id":1,"makeModel":"bzspLRKXUA","year":1985,"retailPrice":799038.0}
+{"id":2,"makeModel":"bPOMOjTlhE","year":1981,"retailPrice":705481.0}
+{"id":3,"makeModel":"PRfvgKFjcF","year":2005,"retailPrice":948885.0}

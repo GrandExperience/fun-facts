@@ -52,4 +52,4 @@ First, user story testing and walkthroughs will be conducted using the finalized
 
 Second, a traceability matrix will be constructed to map each requirement directly to its technical implementation, such as database queries for adding, retrieving, and deleting facts. Finally, functional prototype testing will be conducted in a staging environment to validate that the automation triggers execute exactly once per day and that duplicate entries are accurately rejected or purged without disrupting the production queue.
 
-![Screenshot](images/Group Design Overlay.png)
+![Screenshot](images/group-design-overlay.png)

@@ -83,4 +83,8 @@ public class FactController {
     public int countActiveFacts() {
         return factDao.countActiveFacts();
     }
+    @RequestMapping(value = "/getLatestFacts", method = RequestMethod.GET)
+    public List<Fact> getLatestFacts() {
+        return factDao.getLatestFacts();
+    }
 }

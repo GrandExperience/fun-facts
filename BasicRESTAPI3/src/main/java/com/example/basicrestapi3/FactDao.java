@@ -60,5 +60,11 @@ public class FactDao {
         Long count = em.createQuery("SELECT COUNT(f) FROM Fact f WHERE f.active = true", Long.class)
                 .getSingleResult();
         return count.intValue();
+
+    }
+    public List<Fact> getLatestFacts() {
+        return em.createQuery("SELECT f FROM Fact f ORDER BY f.createdAt DESC", Fact.class)
+                .setMaxResults(5)
+                .getResultList();
     }
 }

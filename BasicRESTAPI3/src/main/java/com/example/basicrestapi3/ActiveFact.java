@@ -24,7 +24,7 @@ public class ActiveFact {
     private Integer originalFactId;
 
     public ActiveFact() {}
-
+    // Creates an ActiveFact from a Fact - used when posting a fact
     public ActiveFact(Fact fact) {
         this.factText = fact.getFactText();
         this.source = fact.getSource();
@@ -32,15 +32,34 @@ public class ActiveFact {
         this.originalFactId = fact.getId();
     }
 
-    // Getters and Setters
-    public Integer getId() { return id; }
-    public void setId(Integer id) { this.id = id; }
-    public String getFactText() { return factText; }
-    public void setFactText(String factText) { this.factText = factText; }
-    public String getSource() { return source; }
-    public void setSource(String source) { this.source = source; }
-    public Instant getPostedAt() { return postedAt; }
-    public void setPostedAt(Instant postedAt) { this.postedAt = postedAt; }
-    public Integer getOriginalFactId() { return originalFactId; }
-    public void setOriginalFactId(Integer originalFactId) { this.originalFactId = originalFactId; }
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer id) {
+        this.id = id;
+    }
+    public String getFactText() {
+        return factText;
+    }
+    public void setFactText(String factText) {
+        this.factText = factText;
+    }
+    public String getSource() {
+        return source;
+    }
+    public void setSource(String source) {
+        this.source = source;
+    }
+    public Instant getPostedAt() {
+        return postedAt;
+    }
+    public void setPostedAt(Instant postedAt) {
+        this.postedAt = postedAt;
+    }
+    public Integer getOriginalFactId() {
+        return originalFactId;
+    }
+    public void setOriginalFactId(Integer originalFactId) {
+        this.originalFactId = originalFactId;
+    }
 }

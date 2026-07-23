@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class BasicRestapi3Application {
 
     public static void main(String[] args) {
+
         SpringApplication.run(BasicRestapi3Application.class, args);
     }
 

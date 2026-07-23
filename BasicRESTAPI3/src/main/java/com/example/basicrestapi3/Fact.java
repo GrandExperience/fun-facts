@@ -34,6 +34,7 @@ public class Fact {
         this.source = source;
     }
 
+    // Sets timestamps when a new fact is created
     @PrePersist
     void onCreate() {
         Instant now = Instant.now();
@@ -41,6 +42,7 @@ public class Fact {
         updatedAt = now;
     }
 
+    // Updates timestamp when a fact is modified
     @PreUpdate
     void onUpdate() {
         updatedAt = Instant.now();

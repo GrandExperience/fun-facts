@@ -14,6 +14,7 @@ public class DailyFactScheduler {
     @Autowired
     private FactPostingService factPostingService;
 
+    // Runs on a schedule defined in application.properties
     @Scheduled(cron = "${fact.posting.cron}")
     public void postScheduledFact() {
         log.info("Running daily fun fact posting job.");

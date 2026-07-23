@@ -11,10 +11,10 @@ public class ActiveFact {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "fact_text", nullable = false, columnDefinition = "TEXT")
+    @Column(name = "fact_text", nullable = false)
     private String factText;
 
-    @Column(columnDefinition = "TEXT")
+    @Column
     private String source;
 
     @Column(name = "posted_at", nullable = false)
@@ -32,43 +32,15 @@ public class ActiveFact {
         this.originalFactId = fact.getId();
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getFactText() {
-        return factText;
-    }
-
-    public void setFactText(String factText) {
-        this.factText = factText;
-    }
-
-    public String getSource() {
-        return source;
-    }
-
-    public void setSource(String source) {
-        this.source = source;
-    }
-
-    public Instant getPostedAt() {
-        return postedAt;
-    }
-
-    public void setPostedAt(Instant postedAt) {
-        this.postedAt = postedAt;
-    }
-
-    public Integer getOriginalFactId() {
-        return originalFactId;
-    }
-
-    public void setOriginalFactId(Integer originalFactId) {
-        this.originalFactId = originalFactId;
-    }
+    // Getters and Setters
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
+    public String getFactText() { return factText; }
+    public void setFactText(String factText) { this.factText = factText; }
+    public String getSource() { return source; }
+    public void setSource(String source) { this.source = source; }
+    public Instant getPostedAt() { return postedAt; }
+    public void setPostedAt(Instant postedAt) { this.postedAt = postedAt; }
+    public Integer getOriginalFactId() { return originalFactId; }
+    public void setOriginalFactId(Integer originalFactId) { this.originalFactId = originalFactId; }
 }

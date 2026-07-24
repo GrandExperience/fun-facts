@@ -2,6 +2,8 @@ package com.example.basicrestapi3;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -13,7 +15,20 @@ public class FactController {
 
     @Autowired
     private ActiveFactDao activeFactDao;
+    // Jadalynn's implementation, json must match fact class exactly.
+    @RequestMapping(value="/addFact", method= RequestMethod.POST)
+    public Fact addFact(@RequestBody Fact newFact) throws IOException{
+        factDao.create(newFact);
+        return newFact;
+    }
 
+    @RequestMapping(value="/updateFact", method= RequestMethod.PUT)
+    public Fact updateFact(@RequestBody Fact newFact) throws IOException {
+        factDao.update(newFact);
+        return newFact;
+    }
+    // previous implementation
+/*
     @RequestMapping(value = "/addFact", method = RequestMethod.POST)
     public Fact addFact(@RequestBody Map<String, Object> body) {
         String factText = body.get("factText").toString();
@@ -27,7 +42,7 @@ public class FactController {
         return fact;
     }
 
-    @RequestMapping(value = "/updateFact", method = RequestMethod.PUT)
+     @RequestMapping(value = "/updateFact", method = RequestMethod.PUT)
     public Fact updateFact(@RequestBody Map<String, Object> body) {
         int id = Integer.parseInt(body.get("id").toString());
         Fact fact = factDao.getById(id);
@@ -44,7 +59,7 @@ public class FactController {
 
         factDao.update(fact);
         return fact;
-    }
+    } */
 
     @RequestMapping(value = "/getFact/{id}", method = RequestMethod.GET)
     public Fact getFact(@PathVariable int id) {
